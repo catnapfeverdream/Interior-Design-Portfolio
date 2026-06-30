@@ -373,8 +373,16 @@ section{
 }
 .footer .copyright{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 16px;
+}
+#msg{
+    color: var(--text-color);
+    font-size: 1.5em;
+    display: block;
+    margin-top: -50px;
+    margin-right: 20%;
+    text-align: right;
 }
 
 @media(max-width:1285px){

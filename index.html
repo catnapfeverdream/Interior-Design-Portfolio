@@ -183,6 +183,7 @@
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
+        <span id="msg"></span>
     </section>
 
     <footer class="footer">
@@ -227,22 +228,27 @@
         </ul>
 
         <p class="copyright">
-            &copy;Kim B Studios in partnership with Oskie McBoven Studios | All Rights Reserved
+            &copy;Kim B Studios in partnership with catnapfeverdream studios | All Rights Reserved
         </p>
     </footer>
 
     <script src="js.js"></script>
     <script>
-	const scriptURL = 'https://script.google.com/macros/s/AKfycbxmTXtQ0Hv7Y4Sj4IqwLI0y8PbjP8JxgtsDF_y48bHQT_1gBoIZVr6eqM0Nw8DWfGdt4w/exec'
-	const form = document.forms['Contact Form']
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbxNK8R8V0--htB6A15w76dMcKu08PfhNQKGWADXV-_unXxd_dko0D2bKkNdEwtS8l5oRw/exec'
+	const form = document.forms['Contact Form'];
+    const msg = document.getElementById('msg');
 
 	form.addEventListener('submit', e => {
 		e.preventDefault()
 		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 			.then(response => response.json())
-			.then(response => console.log('Success!', response))
+			.then(response => {
+                console.log('Success!', response);
+                msg.innerHTML = 'Message sent successfully!'
+                form.reset();
+            })
 			.catch(error => console.error('Error!', error.message))
 	})
-</script>
+    </script>
 </body>
 </html>
