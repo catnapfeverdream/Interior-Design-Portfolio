@@ -87,6 +87,7 @@ span{
     transition: 0.3s ease-in-out;
     color: black;
     border: none;
+    margin-top: 10px;
     text-wrap: nowrap;
 }
 .gradient-btn:hover{
@@ -117,7 +118,7 @@ section{
 }
 .home-content h3{
     margin: 1rem 0;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .home-content p{
     font-size: 1.5rem;
@@ -135,17 +136,20 @@ section{
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
 }
+.social-icons{
+    display: inline-flex;
+    gap: 15px;
+}
 .social-icons a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1rem;
     background: transparent;
-    border: 2px solid var(--main-color);
     border-radius: 50%;
     color: var(--main-color);
-    nargin: 3rem 0.5;
+    margin: 3rem 0.5;
     transition: 0.3s ease-in-out;
 }
 .social-icons a:hover{
