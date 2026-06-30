@@ -24,6 +24,8 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+
+/*------------HEADER------------*/
 .header{
     position: fixed;
     width: 100%;
@@ -98,6 +100,8 @@ section{
     min-height: 100vh;
     padding: 10rem 10%;
 }
+
+/*------------HOME------------*/
 .home{
     display: flex;
     align-items: center;
@@ -136,15 +140,15 @@ section{
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
 }
-.social-icons{
+#head-icons{
     display: inline-flex;
     gap: 15px;
+    font-size: 2rem;
 }
 .social-icons a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
     padding: 1rem;
     background: transparent;
     border-radius: 50%;
@@ -166,7 +170,9 @@ section{
     display: inline-block;
     padding: 1rem 3rem;
     background-color: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color);
+
+    /*----box-shadow: 0 0 25px var(--main-color);---*/
+    
     border-radius: 3rem;
     font-size: 1.8rem;
     color: black;
@@ -176,8 +182,8 @@ section{
 }
 .btn:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
+    /*---box-shadow: 0 0 15px var(--main-color),
+                0 0 25px var(--main-color);---*/
 }
 .btn-group a:nth-of-type(2){
     background-color: black;
@@ -191,6 +197,7 @@ section{
     color: black;
 }
 
+/*------------ABOUT------------*/
 .about{
     display: flex;
     justify-content: center;
@@ -236,6 +243,7 @@ section{
     margin: 5rem 0;
 }
 
+/*------------SERVICES------------*/
 .services{
     background-color: var(--bg-color);
     color: black;
@@ -288,6 +296,7 @@ section{
     font-size: 8rem;
 }
 
+/*------------GALLERY------------*/
 .projects{
     background-color: var(--second-bg-color);
 }
@@ -315,8 +324,8 @@ section{
     transition: .3s ease-in-out;
 }
 .project-card:hover{
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
+    box-shadow: 0 0 15px var(--main-color),
+                0 0 25px var(--main-color);
     transform: scale(1.02);
 }
 .project-card h3{
@@ -326,6 +335,7 @@ section{
     font-size: 1.6rem;
 }
 
+/*------------CONTACT------------*/
 .contact{
     background-color: var(--bg-color);
 }
@@ -352,12 +362,19 @@ section{
     margin: 1.5rem 0;
     resize: none;
 }
+#msg{
+    color: var(--text-color);
+    font-size: 1.5em;
+    display: block;
+    margin-top: -50px;
+    margin-right: 20%;
+    text-align: right;
+}
+
+/*------------FOOTER------------*/
 .footer{
     background-color: var(--second-bg-color);
     padding: 50px 0;
-}
-.footer .social-icons{
-    text-align: center;
 }
 .footer ul{
     text-align: center;
@@ -375,20 +392,17 @@ section{
 .footer ul li a:hover{
     border-bottom: 3px solid var(--main-color);
 }
+#foot-icons{
+    text-align: center;
+    font-size: 3rem;
+}
 .footer .copyright{
     text-align: center;
     margin-top: 10px;
     font-size: 16px;
 }
-#msg{
-    color: var(--text-color);
-    font-size: 1.5em;
-    display: block;
-    margin-top: -50px;
-    margin-right: 20%;
-    text-align: right;
-}
 
+/*------------RESPONSIVENESS------------*/
 @media(max-width:1285px){
     #menu-icon{
         display: block;
