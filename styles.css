@@ -9,8 +9,8 @@
 :root {
     --bg-color: #080808;
     --second-bg-color: #101010;
-    --text-color: white;
-    --main-color: #ea580c;
+    --text-color: rgb(253, 234, 199);
+    --main-color: #ffffff;
 }
 html {
     font-size: 60%;
@@ -52,8 +52,8 @@ body{
 span{
     background: linear-gradient(
         270deg,
-        #DF8908 10%,
-        #ff1d15 100%
+        #fbfafa 10%,
+        #f8f8f6 100%
     );
     background-clip: text;
     color: transparent;
@@ -76,13 +76,13 @@ span{
     border-radius: 3rem;
     background: linear-gradient(
         270deg,
-        #DF8908 10%,
-        #ff1d15 100%
+        #fbfafa 10%,
+        #f8f8f6 100%
     );
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    color: white;
+    color: black;
     border: none;
     text-wrap: nowrap;
 }
